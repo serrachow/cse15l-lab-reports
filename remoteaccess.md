@@ -20,7 +20,10 @@ If you're on Windows, we need to install `git` for Windows.
 
 [Git for Windows](https://gitforwindows.org/)
 
-To open the terminal, use Ctrl + `
+To open the terminal, use Ctrl + `.
 
+From the dropdown menu, choose to use Git Bash.
+
+![image](https://user-images.githubusercontent.com/105563729/211947883-70d773eb-986a-4bf9-a141-00edc4410594.png)
 
 ## Step 3: Trying Some Commands
