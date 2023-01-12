@@ -26,4 +26,10 @@ From the dropdown menu, choose to use Git Bash.
 
 ![image](https://user-images.githubusercontent.com/105563729/211947883-70d773eb-986a-4bf9-a141-00edc4410594.png)
 
+To use the `ssh` command, first type in your account username followed by `@ieng6.ucsd.edu`.
+
+```
+$ ssh cs15lw23acx@ieng6.ucsd.edu
+```
+
 ## Step 3: Trying Some Commands
