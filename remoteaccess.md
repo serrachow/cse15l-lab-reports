@@ -10,7 +10,14 @@ You can either find a computer that already has Visual Studio Code installed or 
 
 [Visual Studio Code Website](https://code.visualstudio.com/)
 
-When it is installed, the window opened should look something similar to this:
+When it is installed, the window opened should look something similar to this: (Windows)
 
 ![image](https://user-images.githubusercontent.com/105563729/211946977-3a3f4c1a-543b-4bf5-857e-a643ed0391c4.png)
 
+## Step 2: Remotely Connecting
+
+If you're on Windows, we need to install ==git== for Windows. 
+
+[Git for Windows](https://gitforwindows.org/)
+
+## Step 3: Trying Some Commands
