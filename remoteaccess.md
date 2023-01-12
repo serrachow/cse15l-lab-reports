@@ -1,6 +1,6 @@
 # Remote Access
 
-This is a tutorial on how to log into a course-specific account on =ieng6= for future CSE 15L students.
+This is a tutorial on how to log into a course-specific account on `ieng6` for future CSE 15L students.
 
 ---
 
