@@ -26,9 +26,9 @@
 
 **UCSD College Ranking**
 
-* Seventh College
-* Sixth College
-* the rest
+1. Seventh College
+2. Sixth College
+3. the rest
 
 `print("Hello World")`
 
