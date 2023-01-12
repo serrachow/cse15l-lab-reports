@@ -41,3 +41,21 @@ The result should be something similar to this:
 ![Screenshot_20230111_033806](https://user-images.githubusercontent.com/105563729/211948466-64726e2d-b149-421a-85c1-4e5ff6064ce2.png)
 
 ## Step 3: Trying Some Commands
+
+Try `pwd`.
+
+The result should be the path to your account.
+
+Try `mkdir hello` and `pwd`.
+
+Then try `ls`
+
+You should see `hello` under your list of directories.
+
+Lastly try `cd ..`
+
+The result should show your parent folder.
+
+Results of these commands:
+
+![Screenshot_20230111_034424](https://user-images.githubusercontent.com/105563729/211948818-c8904539-e97d-4008-be42-68165c1c65da.png)
