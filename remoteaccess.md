@@ -32,4 +32,12 @@ To use the `ssh` command, first type in your account username followed by `@ieng
 $ ssh cs15lw23acx@ieng6.ucsd.edu
 ```
 
+Since this is the first time you are connecting to the server, the terminal will ask `Are you sure you want to continue connecting (yes/no/[fingerprint])? `; type `yes`.
+
+Next time in your password. Your password will not show up due to security reasons.
+
+The result should be something similar to this:
+
+![Screenshot_20230111_033806](https://user-images.githubusercontent.com/105563729/211948466-64726e2d-b149-421a-85c1-4e5ff6064ce2.png)
+
 ## Step 3: Trying Some Commands
