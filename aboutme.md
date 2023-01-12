@@ -30,7 +30,7 @@
 2. Sixth College
 3. the rest
 
-![Have a cat](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fcats%2F&psig=AOvVaw39rftZkEM7rj50W1_0ztPk&ust=1673568613963000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCNjc0pzfwPwCFQAAAAAdAAAAABAE)
+![Have a cat](https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg)
 
 `print("Hello World")`
 
