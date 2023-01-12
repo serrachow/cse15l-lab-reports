@@ -1,6 +1,6 @@
 # Remote Access
 
-This is a tutorial on how to log into a course-specific account on ==ieng6== for future CSE 15L students.
+This is a tutorial on how to log into a course-specific account on =ieng6= for future CSE 15L students.
 
 ---
 
@@ -16,7 +16,7 @@ When it is installed, the window opened should look something similar to this: (
 
 ## Step 2: Remotely Connecting
 
-If you're on Windows, we need to install ==git== for Windows. 
+If you're on Windows, we need to install =git= for Windows. 
 
 [Git for Windows](https://gitforwindows.org/)
 
