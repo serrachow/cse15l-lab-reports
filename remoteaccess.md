@@ -16,8 +16,11 @@ When it is installed, the window opened should look something similar to this: (
 
 ## Step 2: Remotely Connecting
 
-If you're on Windows, we need to install =git= for Windows. 
+If you're on Windows, we need to install `git` for Windows. 
 
 [Git for Windows](https://gitforwindows.org/)
+
+To open the terminal, use Ctrl + `
+
 
 ## Step 3: Trying Some Commands
