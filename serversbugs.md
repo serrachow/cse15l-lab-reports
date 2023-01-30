@@ -1,4 +1,4 @@
-# StringServer
+# Part 1: StringServer
 
 **StringServer code:**
 
@@ -12,7 +12,7 @@
 
 The methods called in my code is handleRequest, which checks the path of the URL and takes in two parameters. handleRequest checks that the path is either `"/"`, which prints out all the Strings that have been added, or `"/add-message"`. When adding a message, the code checks that `parameters[0] = "s"` and that `"parameters[1]" = <inputString>"`. Ever inputString is added to startingString, which is later printed out separated by `"\n"` for a new line. 
 
-# Bugs
+# Part 2: Bugs
 
 **Failure-inducing Input**
 ```
@@ -68,3 +68,9 @@ The methods called in my code is handleRequest, which checks the path of the URL
     }
   }
 ```
+
+A temporary new array is needed in order to properly reverse in place as the function is drawing from the very array that it reversed. 
+
+# Part 3: What I Learned
+
+I learned how to launch a local server and how you can change the URL inputs using different parameters and printing results out using String format.
