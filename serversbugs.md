@@ -14,7 +14,7 @@ The methods called in my code is handleRequest, which checks the path of the URL
 
 # Bugs
 
-**Failure-inducing Input"
+**Failure-inducing Input**
 ```
 @Test
   public void testReverseInPlace2() {
@@ -31,10 +31,40 @@ The methods called in my code is handleRequest, which checks the path of the URL
 
 ```
 @Test 
-	public void testReverseInPlace() {
+  public void testReverseInPlace() {
     int[] input1 = { 1 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 1 }, input1);
-	}
+  }
+ ```
+**Result**
+ 
+![image](https://user-images.githubusercontent.com/105563729/215363436-05603cee-dc55-4350-ab7d-6f17b4feb216.png)
+
+**Symptom**
+
+![image](https://user-images.githubusercontent.com/105563729/215363502-a0e14dda-a56d-4fff-bfe1-9d1b360f788a.png)
+
+**Before**
+
+```
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
  ```
  
+**After**
+
+```
+  static void reverseInPlace(int[] arr) {
+    int[] tempArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      tempArray[i] = arr[i];
+    }
+    for (int i = 0; i < arr.length; i++) {
+      arr[i] = tempArray[arr.length - i - 1];
+    }
+  }
+```
