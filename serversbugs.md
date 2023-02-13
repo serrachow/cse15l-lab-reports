@@ -2,7 +2,45 @@
 
 **StringServer code:**
 
-![image](https://user-images.githubusercontent.com/105563729/215361441-db0b546c-4b46-437b-aea2-08a14ddba865.png)
+```
+import java.io.IOException;
+import java.net.URI;
+
+class Handler implements URLHandler {
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
+    String startingString = " ";
+
+    public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            return startingString;
+        } else {
+            System.out.println("Path: " + url.getPath());
+            if (url.getPath().contains("/add-message")) {
+                String[] parameters = url.getQuery().split("=");
+                if (parameters[0].equals("s")) {
+                    startingString = startingString + "\n" + parameters[1];
+                    return startingString;
+                }
+            }
+            return "404 Not Found!";
+        }
+    }
+}
+
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
 
 **Add Message**
 
