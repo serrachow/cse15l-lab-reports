@@ -58,3 +58,53 @@ grep -c "Japan" written_2/travel_guides/berlitz1/HistoryJapan.txt
 ```
 101
 ```
+
+## Example 3: `-v`
+
+Here, we use the grep command with `-v` in Vallarta History and History of Japan text files. Adding `-v` to display the lines in a text file that do not match the chosen word. This command can be used quickly to eliminate text that has your chosen word, especially if your word is common. Note, grep is searching by case sensitivity.
+
+**Source:**[grep command in UNIX/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+
+**Command 1**
+```console
+grep -v "the" written_2/travel_guides/berlitz2/Vallarta-History.txt
+```
+
+**Output 1**
+```
+A Brief History
+Puerto Vallarta
+Puerto Vallarta has continued to grow, and has become an important art center. It attracts an increasing number of visitors to its true Mexican ambiance, coupled with a modern resort environment.   
+Ixtapa–Zihuatanejo: From Pre-Hispanic Resort to Modern Paradise   
+Puerto Escondido and Huatulco
+```
+
+**Command 2**
+```console
+grep -v "a" written_2/travel_guides/berlitz1/HistoryJapan.txt
+```
+
+**Output 2**
+```
+A Brief History
+The oldest Stone Age settlements to be discovered (10,000 
+Chinese Influences
+Buddhism.
+century.
+indeed — until 1869.
+improvised verse.
+Enter the Shoguns
+out.
+to bolster their government.
+30 million.
+enforce the (short-lived) new rules.
+time.
+structures.
+symbolic role of the emperor, still considered the embodiment of
+“self-defense” force.
+government’s blessing, consumers were left to foot the bill.
+world.
+efficiency in order to survive.
+existed.
+end up confounding the pessimists. It will likely emerge in the 21st
+```
