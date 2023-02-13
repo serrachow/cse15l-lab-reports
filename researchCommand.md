@@ -108,3 +108,34 @@ efficiency in order to survive.
 existed.
 end up confounding the pessimists. It will likely emerge in the 21st
 ```
+
+## Example 4: `-l`
+
+Here, we use the grep command `-l` in the travel guides directory to look for specific words. Adding -l displays the file path that contains the word or pattern. This is useful because you can quickly search through texts and also are given their file paths from a chosen word.
+
+**Source:**[grep command in UNIX/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+
+**Command 1**
+```console
+grep -li "escondido" ./written_2/travel_guides/*/*
+```
+
+**Output 1**
+```
+./written_2/travel_guides/berlitz2/California-WhereToGo.txt       
+./written_2/travel_guides/berlitz2/Vallarta-History.txt
+./written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
+./written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
+```
+
+**Command 2**
+```console
+grep -li "stagnation" ./written_2/travel_guides/*/*
+```
+
+**Output 2**
+```
+./written_2/travel_guides/berlitz1/HistoryJapan.txt
+./written_2/travel_guides/berlitz2/Amsterdam-WhereToGo.txt        
+./written_2/travel_guides/berlitz2/Crete-History.txt
+```
