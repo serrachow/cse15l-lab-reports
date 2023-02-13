@@ -111,7 +111,7 @@ end up confounding the pessimists. It will likely emerge in the 21st
 
 ## Example 4: `-l`
 
-Here, we use the grep command `-l` in the travel guides directory to look for specific words. Adding -l displays the file path that contains the word or pattern. This is useful because you can quickly search through texts and also are given their file paths from a chosen word.
+Here, we use the grep command `-l` in the travel guides directory to look for specific words. Adding -l displays the file path that contains the word or pattern. This is useful because you can quickly search through texts and also are given their file paths from a chosen word. Note, we add `-i` along with `-l` to form `-li` to ignore case sensitivity. 
 
 **Source:** [grep command in UNIX/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
