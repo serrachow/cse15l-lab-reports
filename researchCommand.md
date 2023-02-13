@@ -63,7 +63,7 @@ grep -c "Japan" written_2/travel_guides/berlitz1/HistoryJapan.txt
 
 Here, we use the grep command with `-v` in Vallarta History and History of Japan text files. Adding `-v` to display the lines in a text file that do not match the chosen word. This command can be used quickly to eliminate text that has your chosen word, especially if your word is common. Note, grep is searching by case sensitivity.
 
-**Source:**[grep command in UNIX/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+**Source:** [grep command in UNIX/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
 **Command 1**
 ```console
@@ -113,7 +113,7 @@ end up confounding the pessimists. It will likely emerge in the 21st
 
 Here, we use the grep command `-l` in the travel guides directory to look for specific words. Adding -l displays the file path that contains the word or pattern. This is useful because you can quickly search through texts and also are given their file paths from a chosen word.
 
-**Source:**[grep command in UNIX/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+**Source:** [grep command in UNIX/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
 **Command 1**
 ```console
