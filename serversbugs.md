@@ -52,6 +52,8 @@ The methods called in my code is handleRequest, which checks the path of the URL
 
 # Part 2: Bugs
 
+Here, we are testing code from Lab 3. This JUnit test `testReverseInPlace2` is from ArrayTests, and the code we are testing is in ArrayExamples.java. However, the testReverseInPlace2 does not pass because the array is not reversed correctly. 
+
 **Failure-inducing Input**
 ```
 @Test
@@ -79,10 +81,6 @@ The methods called in my code is handleRequest, which checks the path of the URL
  
 ![image](https://user-images.githubusercontent.com/105563729/215363436-05603cee-dc55-4350-ab7d-6f17b4feb216.png)
 
-**Symptom**
-
-![image](https://user-images.githubusercontent.com/105563729/215363502-a0e14dda-a56d-4fff-bfe1-9d1b360f788a.png)
-
 **Before**
 
 ```
@@ -107,7 +105,7 @@ The methods called in my code is handleRequest, which checks the path of the URL
   }
 ```
 
-A temporary new array is needed in order to properly reverse in place as the function is drawing from the very array that it reversed. 
+A temporary new array is needed in order to properly reverse in place as the function is drawing from the very array that it reversed. Before, the code would take from already switched elements. For example, reversing `[1, 2, 3, 4, 5]` should result in `[5, 4, 3, 2, 1]` but results in `[5, 4, 3, 4, 5]` since when the loop reached index 3, it would try and switch the second element and the second-last element, but the second element had already been changed and was not the original. To fix this, we duplicated the array so that the original is saved in memory and draw elements from there. 
 
 # Part 3: What I Learned
 
