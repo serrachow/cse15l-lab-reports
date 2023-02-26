@@ -18,6 +18,21 @@ Because we have an SSH key used to authenticate Github, we can use the SSH url t
 
 3. Run the tests, demonstrating that they fail
 
+`cd lab7<enter>`
+
+`ls<enter>`
+
+`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java<enter>`
+
+`java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests<enter>`
+
+`cat ListExamplesTests.java<enter>`
+
+First we use `cd lab7` to change the directory we're in into the lab7 directory. Then we use the command `ls` to make sure that `ListExamples.java` and `ListExamplesTest.java` are inside the lab7 directory. We run `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`to compile and run the JUnit tests. From the screenshot, we can tell that `testMerge2` in `ListExamplesTests` failed. If we use `cat ListExamplesTests.java` to see inside the tester file, we can see that we must fix the merge method.
+
+![image](https://user-images.githubusercontent.com/105563729/221443431-4b8894d9-659c-49a3-8038-68101287ef07.png)
+
+![image](https://user-images.githubusercontent.com/105563729/221443566-9d3bde6f-6b70-4c0c-90e6-85ce8a6acfbb.png)
 
 4. Edit the code file to fix the failing test
 
