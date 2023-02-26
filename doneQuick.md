@@ -58,6 +58,23 @@ First we must use nano to edit the ListExamples.java document. We type `nano Lis
 `<up><up><up><up><enter>`
 (to find `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`)
 
+Now, instead of retyping the javac and java commands, we can press the up arrow three times to find the compile command and press enter to run. Then we can press the up arrow four times and find our previous java run command and press enter to run the tester file. From the screenshot, we can see the tester file now passes and our code is now fixed. 
+
 ![image](https://user-images.githubusercontent.com/105563729/221443989-342ef232-2167-4a8c-b4e5-a584492d1cc1.png)
 
 6. Commit and push the resulting change to your Github account
+
+`git add ListExamples.java<enter>`
+
+`git commit -m "fixed ListExamples.java"<enter>`
+
+`git push origin main<enter>`
+
+First we use `git add` to add a change in the working directory to the staging area. Then we use `git commit` that captures a screenshot of the changes, along wth a message to explain what we did. Lastly, we use `git push origin main` to upload the changes from the local repository to the remote repository. 
+
+![image](https://user-images.githubusercontent.com/105563729/221444293-08490736-8eb4-42eb-b11e-9616a481ccdf.png)
+
+On Github, the fixed code:
+
+![image](https://user-images.githubusercontent.com/105563729/221444414-badd4e13-1991-41b3-8529-2a19c13c0113.png)
+
