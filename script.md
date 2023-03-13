@@ -49,6 +49,8 @@ Changes directory into the lab7 directory and prints out the list of files and d
 
 Runs the javac command to compile and runs the java -cp command to run the JUnit tests. It should show that the tests do not pass.
 
+![image](https://user-images.githubusercontent.com/105563729/224583101-d2752519-02d8-4b92-a70e-68bfb4689186.png)
+
 `sed '43 s/index1/index2/' ListExamples.java > changed.java && mv changed.java ListExamples.java`
 
 This is actually two commands in one line. The first part, `sed '43s/index1/index2/' ListExamples.java > changed.java`, uses the sed command to change the index1 to index2 at line 43. The `s/` stands for substitution. The sed command sends the changes to a new file called `changed.java` instead of printing to standard output. The two commands are concatenated with `&&`. The second part, `mv changed.java ListExamples.java`, moves the contents of `changed.java` back to `ListExamples.java`.
@@ -59,6 +61,8 @@ This is actually two commands in one line. The first part, `sed '43s/index1/inde
 
 The javac and java commands are run again. The tests should now pass.
 
+![image](https://user-images.githubusercontent.com/105563729/224583124-7ae600f2-985b-429e-a06f-dfdfce1c5d1a.png)
+
 `git add ListExamples.java`
 
 `git commit -m "fixed ListExamples.java"`
@@ -66,3 +70,6 @@ The javac and java commands are run again. The tests should now pass.
 `git push origin main`
 
 Git add adds a change to the staging area. Git commit captures a screenshot, along with a small message, and git push uploads the changes to the remote repository.
+
+![image](https://user-images.githubusercontent.com/105563729/224583174-8cacf8b0-e079-42cb-8338-2d01c52661c8.png)
+
